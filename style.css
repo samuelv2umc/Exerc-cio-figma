@@ -20,7 +20,7 @@ nav .link {
     font-size: 18px;
 }
 
-nav .link-sobre {
+.link-sobre {
     color: white;
     text-decoration: underline;
     margin: 0 15px;
@@ -101,4 +101,5 @@ main {
         text-align: center;
     }
 }
+
 
