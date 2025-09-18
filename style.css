@@ -1,3 +1,4 @@
+/* Reset and global styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -6,8 +7,8 @@ body {
 }
 
 header {
-    background-color: black;
-    padding: 10px 20px;
+    background-color: #333;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,48 +21,85 @@ nav .link {
     font-size: 18px;
 }
 
+nav .link-sobre {
+    color: white;
+    text-decoration: underline;
+    margin: 0 15px;
+    font-size: 18px;
+    position: absolute;
+    right: 20px;
+}
+
 main {
     text-align: center;
     padding: 20px;
 }
 
-.produtos {
+.container {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    margin-top: 20px;
+    align-items: center;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
-.produto {
-    max-width: 200px;
-    text-align: center;
+.titulo-compra {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
-.produto img {
+.imagem-compra {
     width: 100%;
+    max-width: 400px;
     height: auto;
     border-radius: 10px;
 }
 
+.detalles {
+    text-align: left;
+    font-size: 18px;
+    max-width: 350px;
+}
+
 .preco {
-    font-size: 20px;
-    margin: 10px 0;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.descricao {
+    font-size: 16px;
+    margin-bottom: 20px;
 }
 
 .botao {
     display: inline-block;
     background-color: #00aaff;
     color: white;
-    padding: 6px 12px;
+    padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
     box-shadow: 2px 2px 0 #0077aa;
 }
 
-.original {
-    margin-top: 30px;
-    font-size: 20px;
-    font-weight: bold;
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titulo-compra {
+        font-size: 28px;
+    }
+
+    .imagem-compra {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .detalhes {
+        text-align: center;
+    }
 }
